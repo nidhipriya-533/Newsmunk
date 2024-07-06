@@ -35,14 +35,14 @@ useEffect(() => {
   updateNews();
   //eslint-disable-next-line
 }, [])
-const handlePrevClick = async ()=>{
-      setPage(page-1)
-      updateNews();
-}
-const handleNextClick = async ()=>{
-    setPage(page+1)
-    updateNews()
-}
+// const handlePrevClick = async ()=>{
+//       setPage(page-1)
+//       updateNews();
+// }
+// const handleNextClick = async ()=>{
+//     setPage(page+1)
+//     updateNews()
+// }
  const fetchMoreData = async () => {
   const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=e7e74c3b93324a8a92d762a461a26e91&page=${page+1}&pageSize=${props.pageSize}`;
     setPage(page+1)
